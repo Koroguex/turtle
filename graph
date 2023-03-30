@@ -1,0 +1,13 @@
+import turtle
+
+t = turtle.Turtle()
+t.speed('fastest')
+t.pu()
+t.pensize(1)
+for x in range(-50,50):
+  for y in range(-50,50):
+    t.goto(x,y)
+    if x**2<=y and x**2+1>=y:
+      t.pd()
+      t.pu()
+    
